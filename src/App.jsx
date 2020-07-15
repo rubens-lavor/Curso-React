@@ -10,69 +10,88 @@ import Card from './components/layout/Card'
 import CondicionalComIf from './components/basicos/CondicionalComIf'
 import Pai from './components/comunicação/direta/Pai'
 import Super from './components/comunicação/indireta/Super'
+import Input from './components/form/input'
+import Contador from './components/contador/Contador'
 
 export default (props) => (
 
     <div className="App">
 
+        <h1>Fundamentos React</h1>
 
-        <Card titulo="#08 Cominucação Indireta" color="#000">
+        <div className="Cards">
 
-            <Super />
+            <Card titulo="#10 Contador" color="#293e6a">
 
-        </Card>
+                <Contador passo={10} valor={100}/>
 
-        <Card titulo="#07 Cominucação Direta" color="#4298b5">
+            </Card>
 
-            <Pai sobrenome="Freitas" />
+            <Card titulo="#09 Input" color="#9c0f5f">
 
-        </Card>
+                <Input />
 
-        <Card titulo="#06 Condicional com If" color="#FA6900">
+            </Card>
 
-            <CondicionalComIf numero={9} />
+            <Card titulo="#08 Cominucação Indireta" color="#000">
 
-        </Card>
+                <Super />
 
-        <Card titulo="#05 Condicional v1" color="#e94c6f">
+            </Card>
 
-            <Condicional numero={10} />
+            <Card titulo="#07 Cominucação Direta" color="#4298b5">
 
-        </Card>
+                <Pai sobrenome="Freitas" />
 
-        <Card titulo="#04 Repetição" color="#008bba">
+            </Card>
 
-            <Repeticao />
+            <Card titulo="#06 Condicional com If" color="#FA6900">
 
-        </Card>
+                <CondicionalComIf numero={9} />
 
-        <Card titulo="#03 Componente Com Filhos" color="#d96459">
+            </Card>
 
-            <ComFilhos>
-                <ul>
-                    <li>Ana</li>
-                    <li>Bea</li>
-                    <li>Carlos</li>
-                    <li>Daniel</li>
-                </ul>
-            </ComFilhos>
+            <Card titulo="#05 Condicional v1" color="#e94c6f">
 
-        </Card>
+                <Condicional numero={10} />
 
-        <Card titulo="#02 Componente Com Parametro" color="#ff85cb">
+            </Card>
 
-            <ComParametro titulo="Esse é o título"
-                subtitulo="Esse é o subtítulo" />
+            <Card titulo="#04 Repetição" color="#008bba">
 
-            <ComParametro titulo="Opa"
-                subtitulo="Epa" />
-        </Card>
+                <Repeticao />
 
-        <Card titulo="#01 Primeiro Componente" color="#92b06a">
+            </Card>
 
-            <Primeiro />
+            <Card titulo="#03 Componente Com Filhos" color="#d96459">
 
-        </Card>
+                <ComFilhos>
+                    <ul>
+                        <li>Ana</li>
+                        <li>Bea</li>
+                        <li>Carlos</li>
+                        <li>Daniel</li>
+                    </ul>
+                </ComFilhos>
+
+            </Card>
+
+            <Card titulo="#02 Componente Com Parametro" color="#ff85cb">
+
+                <ComParametro titulo="Esse é o título"
+                    subtitulo="Esse é o subtítulo" />
+
+                <ComParametro titulo="Opa"
+                    subtitulo="Epa" />
+            </Card>
+
+            <Card titulo="#01 Primeiro Componente" color="#92b06a">
+
+                <Primeiro />
+
+            </Card>
+
+        </div>
 
     </div>
 )
