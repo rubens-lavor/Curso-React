@@ -12,6 +12,7 @@ import Pai from './components/comunicação/direta/Pai'
 import Super from './components/comunicação/indireta/Super'
 import Input from './components/form/input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 export default (props) => (
 
@@ -21,9 +22,15 @@ export default (props) => (
 
         <div className="Cards">
 
+            <Card titulo="#11 Mega" color="#293e6a">
+
+                <Mega qtdeNumeros={8}/>
+
+            </Card>
+
             <Card titulo="#10 Contador" color="#293e6a">
 
-                <Contador passo={10} valor={100}/>
+                <Contador passo={10} valor={100} />
 
             </Card>
 
